@@ -1,0 +1,7 @@
+DAY 1:05/02/2025
+LEARN:
+html--->section,div,span,area,map,class,id,footer,header,nav,
+css---->margin,padding,boarder,text,outline,icon,float
+IMPLEMENT:
+CHALLENGES:
+
