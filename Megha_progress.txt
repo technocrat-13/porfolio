@@ -3,5 +3,5 @@ LEARN:
 html--->section,div,span,area,map,class,id,footer,header,nav,
 css---->margin,padding,boarder,text,outline,icon,float
 IMPLEMENT:
-CHALLENGES:
+CHALLENGES:usage of github for the first time made difficult
 
