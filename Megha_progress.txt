@@ -1,7 +1,14 @@
-DAY 1:05/02/2025
+DAY 1:06/02/2025
 LEARN:
-html--->section,div,span,area,map,class,id,footer,header,nav,
+html--->section,div,span,area,map,class,id,footer,header,nav,   
 css---->margin,padding,boarder,text,outline,icon,float
 IMPLEMENT:
 CHALLENGES:usage of github for the first time made difficult
+
+DAY 2:07/02/2025
+LEARN:
+html--->
+css---->Boxmodel:solid,border-radius,display:inline,block,inline-block,none,visibility:hidden,units in css:%,em,rem,position:static,relative,absolute
+IMPLEMENT:boxmodel,border-radius,display:inline-block,position:static,relative
+CHALLENGES:
 

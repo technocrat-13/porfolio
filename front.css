@@ -1,11 +1,64 @@
-nav{
-    top:0;
-    left:0;
-    background-color: black;
-    color:white;
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    overflow:hidden;
+    background-color: hsla(274, 4%, 33%, 0.959);
     width:100%;
-    padding-left:10px;
-    padding-right: 10px;
-    padding-top: 10px;
-    height: 1.5em;
+    height:100%;
+}
+
+.nav{
+    overflow:hidden;
+    background-color: rgb(24, 23, 22);
+    width:100%;
+    height:10%;
+    text-align:right;
+    padding-top: 4%;
+    display:inline-block;
+
+}
+#name{
+    text-align:left;
+    text-shadow:3%;
+    padding-left:5%;
+    color:white;
+}
+#link{
+    margin-top:5%;
+    text-align:right;
+    text-decoration:none;
+    text-shadow:2%;
+    color:rgba(240, 235, 235, 0.904);
+    padding:5%;
+    padding-top: 50%;
+    height:20%;
+    width:20%;
+    border-radius:50%;
+    
+}
+
+.inbox{
+    color:rgb(8, 8, 8);
+    overflow:hidden;
+    margin:5%;
+    padding-left:10%;
+    padding-right:10%;
+    padding-top:10%;
+    padding-bottom:10%;
+    border:2px solid rgb(105, 33, 33);
+    border-radius:10%;
+    width:70%;
+    height:10%;
+    background-color: rgb(224, 215, 204);
+    text-align:center;
+
+}
+#foot{
+    text-align:center;
+    height:20%;
+    width:100%;
+    background-color: rgb(133, 128, 123);
 }
