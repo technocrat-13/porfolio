@@ -12,3 +12,10 @@ css---->Boxmodel:solid,border-radius,display:inline,block,inline-block,none,visi
 IMPLEMENT:boxmodel,border-radius,display:inline-block,position:static,relative
 CHALLENGES:
 
+DAY 1:08/02/2025
+LEARN:
+html--->   
+css---->flexbox,flex-wrap,flex-grow,flex-shrink,list-style-type,media queries,transitions,css transform:rotate,scale,translate,transform,skew
+IMPLEMENT:
+CHALLENGES:
+
