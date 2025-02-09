@@ -1,64 +1,116 @@
 <html>
     <head>
-        <link href="front.css" rel="stylesheet">      
+        <style>
+            *{
+                margin:0;
+                padding:0;
+            }
+            .home_link{
+                text-decoration: none;
+            }
+        .h2{
+            color:white;
+            font-weight: bold; 
+            margin-left: 5%;
+            text-align: left;
+            margin-top:10%;
+          }
+          horizontal{
+            align:center;
+            block-size:5%;
+            width:100%;
+            color:black solid;
+
+          }
+          .skills_section{
+            backdrop-filter: blur(2%);
+            height:100%;
+            row-gap: 2rem;
+            text-align: center;
+          }
+          .skill_box1, .skill_box2, .skill_box3,.skill_box4 {
+            left:5%;
+            top:5%;
+            margin: 10px 0; /* Adds space between the skill boxes */
+            padding: 10px; /* Adds padding inside the skill boxes */
+            background-color: #dee3edc5; /* Red background for visibility */
+            border: 1px solid #e4e7f1f3; /* Border around the skill boxes */
+            width: 50%; /* Set a fixed width for the skill boxes */
+            text-align: center; /* Center the text inside the boxes */
+            border-radius: 5px; /* Rounded corners for the boxes */
+            position: relative; /* Required for z-index to work */
+            z-index: 1; /* Set the stacking order */
+            opacity: 0; /* Start with the boxes hidden */
+            animation: fall 0.5s forwards; /* Apply the fall animation */
+        }
+
+        @keyframes fall {
+            0% {
+                transform: translateY(-20px); /* Start above the original position */
+                opacity: 0; /* Start hidden */
+            }
+            100% {
+                transform: translateY(0); /* End at the original position */
+                opacity: 1; /* Fade in */
+            }
+        }
+
+        .skill_box1 {
+            animation-delay: 0s; /* No delay for the first box */
+        }
+
+        .skill_box2 {
+            animation-delay: 0.4s; /* Delay for the second box */
+        }
+
+        .skill_box3 {
+            animation-delay: 0.8s; /* Delay for the third box */
+        }
+        .skill_box4 {
+            animation-delay: 1.0s; /* Delay for the third box */
+        }
+        .skill_box1:hover, .skill_box2:hover, .skill_box3:hover,.skill_box4:hover {
+            height:5%;
+            font-size:90%;
+            transform: translate3d(10%); /* Move the box down slightly and forward */
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* Add shadow for depth */
+            transition: transform 0.3s; /* Smooth transition for hover effect */
+        }
+        .background_image{
+            background-image: url('skill.jpeg'); /* Replace with your image path */
+            background-size: cover; /* Cover the entire area */
+            background-position: center; /* Center the image */
+            height: 100vh; /* Full viewport height */
+            display: flex;
+            align-items: center; /* Center vertically */
+            justify-content: center; /* Center horizontally */
+            position: relative; /* Position for overlay */
+        }
+        .overlay {
+            width: 50%;
+            background-color: rgba(36, 34, 34, 0.555); /* Semi-transparent white overlay */
+            padding: 5%; /* Padding around the content */
+            text-align: left;
+            border-radius: 5%; /* Rounded corners for the overlay */
+            box-shadow: 0 4px 10px rgba(29, 29, 29, 0.345); /* Shadow for depth */
+            backdrop-filter: blur(0%); /* Optional: adds a blur effect to the background */
+}
+
+          </style>   
     </head>
-        <body>
-            <section class="skills">
+    <body bgcolor="white">
+        <a href="front.html" class="home_link">HOME</a>
+        <div class="background_image">
+            <div class="overlay">
+        <section class="skills_section" id="skills">
                 <h2 class="h2">SKILLS</h2>
-                <div class="skills__container bd-grid">          
-                <div>
-                <h2 class="skills__subtitle">Profesional Skills</h2>
-                <div class="skills__data">
-                    <div class="skills__names">
-                        <i class='bx bxl-html5 skills__icon'></i>
-                           <span class="skills__name">HTML5</span>
-                   </div>
-                <div class="skills__bar skills__html">
-                </div>
-                    <div>
-                        <span class="skills__percentage">95%</span>
-                    </div>
-                </div>
-                    <div class="skills__data">
-                        <div class="skills__names">
-                            <i class='bx bxl-css3 skills__icon'></i>
-                                <span class="skills__name">CSS3</span>
-                        </div>
-                        <div class="skills__bar skills__css">            
-                        </div>
-                        <div>
-                            <span class="skills__percentage">85%</span>
-                            </div>
-                        </div>
-                            <div class="skills__data">
-                                <div class="skills__names">
-                                    <i class='bx bxl-javascript skills__icon' ></i>
-                                    <span class="skills__name">JAVASCRIPT</span>
-                                </div>
-                                <div class="skills__bar skills__js">
-                                    
-                                </div>
-                                <div>
-                                    <span class="skills__percentage">65%</span>
-                                </div>
-                            </div>
-                            <div class="skills__data">
-                                <div class="skills__names">
-                                    <i class='bx bxs-paint skills__icon'></i>
-                                    <span class="skills__name">UX/UI</span>
-                                </div>
-                                <div class="skills__bar skills__ux">
-                                    
-                                </div>
-                                <div>
-                                    <span class="skills__percentage">85%</span>
-                                </div>
-                            </div>
-                        </div>
-                        
-                    </div>
-                </section>
-                </div>
-            </section>
-        </body>
+                <hr class="horizontal">
+                <div class="skill_box1">HTML5</div>
+                <div class="skill_box2">CSS</div>
+                <div class="skill_box3">JAVASCRIPT</div>
+                <div class="skill_box4">C PROGRAMMING</div>     
+        </section>
+        </div>
+        </div>
+    </body>
 </html>
